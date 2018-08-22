@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;		
+}
+
+.box-full{
+	margin: 0 200px;
+}
+
+.logo{
+	margin: 50px 0 0 0;
+}
+
+.header{
+	margin: 0 100px;
+}
+
+nav.menu, div.footer{
+	text-align: center;
+}
+
+nav.menu ul, div.footer ul{
+	padding: 0;
+}
+
+nav.menu ul > li, div.footer ul li{
+	display: inline-block;
+	margin: 20px;
+	
+}
+
+nav.menu ul > li a{
+	text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #756767;
+}
+
+div.box{
+	margin: 0 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+div.box-reverse{
+	flex-direction: row-reverse;
+}
+
+.box div{
+	margin: 0 50px;
+}
+
+.box-img > img{
+	width: 500px;
+}
+
+div.footer ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
