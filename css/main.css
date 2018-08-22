@@ -1,61 +1,108 @@
 body{
-	margin: 0;
-	padding: 0;		
+	margin: 0 15%;
+	font-family: ubuntu;
+	font-size: 20px;
+
+
+}
+header{
+	padding: 15px;
+
+}
+hr
+{
+	color: #004D40;
+	border-width: 3px;	
 }
 
-.box-full{
-	margin: 0 200px;
+nav{
+	text-align: right;
 }
-
-.logo{
-	margin: 50px 0 0 0;
+div.head
+{
+	float: left;
+	width: 50%;
 }
-
-.header{
-	margin: 0 100px;
-}
-
-nav.menu, div.footer{
-	text-align: center;
-}
-
-nav.menu ul, div.footer ul{
-	padding: 0;
-}
-
-nav.menu ul > li, div.footer ul li{
+ul.nav
+{
 	display: inline-block;
-	margin: 20px;
-	
+	text-align: right;
 }
-
-nav.menu ul > li a{
+a.nav
+{
+	color: #616161;
 	text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #756767;
+	padding: 5px 15px;
+	text-transform: uppercase;
+}
+a.nav:hover
+{
+	color:white;
+	background-color: black;
+	padding: 5px 15px;
+	border-radius: 15px;	
 }
 
-div.box{
-	margin: 0 100px;
-	display: flex;
-	flex-direction: row;
+div.container
+{
+	padding: 15px;
+ width: 90%;
+ height: 300px;
+
+
+ vertical-align: middle;
+}
+div.container > img
+{
+	width:  40%;
+	float: left;
+	margin-right: 15px;
+}
+div.container > p
+{
+	margin-left: 15px;
+	text-align: justify;
+	width: 100%;
+	align-items: center;
 }
 
-div.box-reverse{
-	flex-direction: row-reverse;
+footer
+{
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	width: 100%
+}
+table
+{
+	margin-left: 5%;
+	width: 100%;
+	align-items: center;
 }
 
-.box div{
-	margin: 0 50px;
-}
-
-.box-img > img{
-	width: 500px;
-}
-
-div.footer ul li a{
+a.tab
+{
+	margin: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 14px;
+	color: #616161;
+}
+a.tab:hover
+{
+	text-decoration: underline;
+
+}
+div.sobre
+{
+	text-align: center;
+	box-shadow:  3px 3px 0 lightgrey;
+}
+div.sobre > h1
+{
+	background-color: lime;
+}
+
+img.picture
+{
+	height: 100%;
 }
