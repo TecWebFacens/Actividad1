@@ -43,6 +43,11 @@ a.nav:hover
 	padding: 5px 15px;
 	border-radius: 15px;	
 }
+div.contacto{
+	text-align:center;
+	color: blue;
+
+}
 
 div.container
 {
