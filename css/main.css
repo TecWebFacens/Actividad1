@@ -1,33 +1,34 @@
 body{
-	margin: 0 15%;
+	margin: 80px 20%;
 	font-family: ubuntu;
 	font-size: 20px;
 
 
 }
 header{
-	padding: 15px;
-
+	top:0;
+	position: fixed;
+	width: 60%;
+	background: white;
 }
 hr
 {
 	color: #004D40;
-	border-width: 3px;	
+	border-width: 3px;
+	width: 100%;
 }
 
 nav{
 	text-align: right;
+	top:0;
+	float: right;
+
 }
 div.head
 {
 	float: left;
-	width: 50%;
 }
-ul.nav
-{
-	display: inline-block;
-	text-align: right;
-}
+
 a.nav
 {
 	color: #616161;
@@ -45,7 +46,7 @@ a.nav:hover
 
 div.container
 {
-	padding: 15px;
+ padding: 15px;
  width: 90%;
  height: 300px;
 
