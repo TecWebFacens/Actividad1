@@ -1,0 +1,16 @@
+Baseado nos exemplos da ContaCorrente da aula do dia 23/08, altere o projeto da Corrida de Carros considerando:
+
+
+1. Faça uma corrida de 3 Carros que tem 2 etapas. A primeira etapa os carros dão 20 voltas no circuito e são pontuados pela sua colocação.
+ Quem chegar em primeiro soma 7 pontos, o segundo 3 e o terceiro 1. Na segunda etapa da corrida os carros andam até acabar o combustível. 
+ Quem percorrer a maior distância soma 7 pontos, o segundo 3 pontos e o terceiro 1 ponto.
+ Vence a corrida o carro com mais pontos (somar os pontos da primeira e segunda etapa).
+ Considere que tanto na primeira etapa como na segunda etapa não pode ocorrer empates.
+ Considere também a possíbilidade de fazer um pitstop (somente na primeira etapa) quando um carro não tiver mais combustível.
+
+2. Defina todos os atributos da classe Carro como privados.
+ Ter obrigatoriamente os atributos -velocidade máxima, -quantidade de combustível e -distância percorrida. 
+ Acrescente outros atributos caso ache necessário.
+
+3. Defina todos os métodos públicos na classe Carro.
+

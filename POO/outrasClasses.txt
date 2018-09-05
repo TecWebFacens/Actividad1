@@ -1,0 +1,118 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Projeto1;
+
+/**
+ *
+ * @author Asus
+ */
+public class CorridaCorrida {
+
+    //Construtor
+    public CorridaCorrida() {
+
+    }
+
+    //Metodos
+    public static void main(String[] args) {
+        //Instancias
+        CarroCorrida Carro1 = new CarroCorrida();
+        CarroCorrida Carro2 = new CarroCorrida();
+
+        CondutorCorrida Condutor1 = new CondutorCorrida();
+        CondutorCorrida Condutor2 = new CondutorCorrida();
+
+        Carro1.matricula = "11-AA-11";
+        Carro2.matricula = "22-BB-22";
+
+        Condutor1.nome = "Antonio";
+        Condutor2.nome = "Pedro";
+
+        Condutor1.idade = 22;
+        Condutor2.idade = 32;
+
+        Condutor1.destreza = 75;
+        Condutor2.destreza = 65;
+
+        Carro1.condutor = Condutor1;
+        Carro2.condutor = Condutor2;
+
+        Carro1.ligar();
+        Carro2.ligar();
+
+        Carro1.acelerar();
+        Carro2.acelerar();
+        Carro1.acelerar();
+        Carro2.travar(10);
+        Carro1.acelerar();
+        Carro1.acelerar();
+        Carro1.travar(5);
+        Carro2.acelerar();
+        System.out.println("Velocidade do carro1: " + Carro1.veloAtual);
+        System.out.println("Velocidade do carro2: " + Carro2.veloAtual);
+
+        Carro1.desligar();
+        Carro2.desligar();
+
+    }
+
+}
+-------------------------------------------------------------------------------------
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Projeto1;
+
+/**
+ *
+ * @author Asus
+ */
+public class CarroCorrida {
+//Atributos
+    String modelo;
+    String matricula;
+    int veloAtual;
+    int veloMax;
+    int tempo;
+    
+    CondutorCorrida condutor; 
+
+    public CarroCorrida() {
+
+    }
+
+    void ligar() {
+        System.out.println("Vrummmmm...");
+    }
+
+    void desligar() {
+        System.out.println("MMMmmmmm...");
+    }
+
+    void acelerar() {
+        veloAtual += 2 + condutor.destreza * 0.1;
+        if (veloAtual >= veloMax) {
+            veloAtual = veloMax;
+        }
+    }
+
+    void travar(int intensidadeTravagem) {
+        if (intensidadeTravagem > veloMax) {
+            intensidadeTravagem = veloMax;
+        } else if (intensidadeTravagem < 0) {
+            intensidadeTravagem = 0;
+            veloAtual -= intensidadeTravagem;
+            if (veloAtual > veloMax) {
+                veloAtual = veloMax;
+            } else if (veloAtual < 0) {
+                veloAtual = 0;
+            }
+        }
+    }
+
+}
